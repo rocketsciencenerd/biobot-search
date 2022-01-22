@@ -16,6 +16,7 @@ Biobot customers receive a kit with tubes inside of it, which the customer uses 
 - Create a Github repository to turn this in
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - All Biobot-specific branded assets were retrieved directly from the [Biobot Analytics](https://biobot.io/) website.
+- Create react app has many vulnerabilities in it's package. Since the create-react-app is not directly deployed to production, rather it generates a build file that is deployed to production, the create-react-app module was moved to devDependencies in the package.json file. Still, `npm audit --production` shows over 103 vulnerabilities (7 high, 1 critical) and wether that was acceptable risk would need to be discussed with the dev team for a production-ready app. 
 
 ## Repo Features
 ### CI/CD Workflow
