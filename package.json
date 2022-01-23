@@ -13,14 +13,20 @@
     "@types/react-dom": "^17.0.11",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "typescript": "^4.5.5",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "react-scripts": "^3.0.1"
+    "npm-run-all": "^4.1.5",
+    "react-scripts": "^3.0.1",
+    "ttab": "^0.7.2",
+    "typescript": "^3.8.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "run-s tab:frontend tab:backend",
+    "frontend": "react-scripts start",
+    "backend": "npx json-server -p 4000 --watch data/KITS_SHIPPING_DATA.json",
+    "tab:frontend": "ttab -t 'Run Frontend' npm run frontend",
+    "tab:backend": "ttab -t 'Run Backend' npm run backend",
     "build": "react-scripts build",
     "test": "react-scripts test"
   },

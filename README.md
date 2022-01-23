@@ -16,7 +16,7 @@ Biobot customers receive a kit with tubes inside of it, which the customer uses 
 - Create a Github repository to turn this in
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - All Biobot-specific branded assets were retrieved directly from the [Biobot Analytics](https://biobot.io/) website.
-- Create react app has many vulnerabilities in it's package. Since the create-react-app is not directly deployed to production, rather it generates a build file that is deployed to production, the create-react-app module was moved to devDependencies in the package.json file. Still, `npm audit --production` shows over 103 vulnerabilities (7 high, 1 critical) and wether that was acceptable risk would need to be discussed with the dev team for a production-ready app. 
+- Create react app has many vulnerabilities in it's package. Since the create-react-app is not directly deployed to production, rather it generates a build file that is deployed to production, the create-react-app module was moved to devDependencies in the package.json file. Still, `npm audit --production` shows over 103 vulnerabilities (7 high, 1 critical) and whether that was acceptable risk and how to handle mitigation of risk would need to be discussed with the dev team for a production-ready app. 
 
 ## Repo Features
 ### CI/CD Workflow
@@ -36,19 +36,28 @@ Benefits of TypeScript:
 
 Drawbacks of TypeScript:
 - Takes some time to learn
-- May increases build time marginally since code building needs to go through another layer of compilation
-- Some third party libraries may not have type definitions (but would we want to use those if they lacked a TypeScript option?) 
+- May increases build time since code building needs to go through another layer of compilation
+- Can be overly rigid for small projects 
+- Some third party libraries may not have type definitions
 
-Typescript may not be suitable for all new React projects but is worth discussing in a dev team considering the value it adds in the prevention of bugs, improved ability to scale, and concice tracking of props through a React application.
+Typescript may not be suitable for all new React projects but is worth discussing in a dev team considering the value it adds in the prevention of bugs, improved ability to scale, and concise tracking of props through a React application.
  
 
 ### Material UI
 Since there were no specific stylistic requirements outlined, [Material Ui](https://mui.com/) was added to the repo to build the application as quickly as possible. It provides pre-designed, customizable components allowing this product to be quickly shipped.  
 
+### Code Style
+- Single quotes vs double quotes for strings. According to the [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml): `Prefer ' over "`: "For consistency single-quotes (') are preferred to double-quotes ("). This is helpful when creating strings that include HTML"
+
 ## Available Scripts
 #### `npm start`
+Opens two terminal tabs, one for `npm run frontend`, one for `npm run backend`. On MacOS, terminal needs accessibility access and will prompt the user to allow the action. Otherwise, to run the app, open two terminals. In one terminal, run `npm run frontend` in another terminal run `npm run backend`.
 
+#### `npm run frontend`
 Runs the app in the development mode at [http://localhost:3000](http://localhost:3000)
+
+#### `npm run backend`
+Runs the backend using json-server on port 4000.
 
 #### `npm test`
 Launches the test runner in the interactive watch mode. More about [running tests here](https://facebook.github.io/create-react-app/docs/running-tests).
