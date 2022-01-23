@@ -1,0 +1,13 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Define commonly used flexbox css */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
