@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/biobot-search/precache-manifest.69f49d02bf8db9c09c8dd72f52088420.js"
+  "/biobot-search/precache-manifest.eec8f0fc8f2539e168350f90c8cefac8.js"
 );
 
 self.addEventListener('message', (event) => {
