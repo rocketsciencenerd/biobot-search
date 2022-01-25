@@ -1,13 +1,54 @@
 .app {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-/* Define commonly used flexbox css */
-.flex-center {
-    display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
+    width: 90%;
+    padding: 5%;
+}
+
+.app-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    max-width: 400px;
+    text-align: center;
+
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    backface-visibility: visible;
+    animation-name: flip;
+}
+
+@keyframes flip {
+    from {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+        animation-timing-function: ease-out;
+    }
+
+    40% {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+        animation-timing-function: ease-in;
+    }
+
+    80% {
+        transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 0deg);
+        animation-timing-function: ease-in;
+    }
+
+    to {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+        animation-timing-function: ease-in;
+    }
 }

@@ -46,6 +46,9 @@ Typescript may not be suitable for all new React projects but is worth discussin
 ### Material UI
 Since there were no specific stylistic requirements outlined, [Material Ui](https://mui.com/) was added to the repo to build the application as quickly as possible. It provides pre-designed, customizable components allowing this product to be quickly shipped.  
 
+### Animations
+Animations adapted from [Animate.css](https://animate.style/)
+
 ### Code Style
 - Single quotes vs double quotes for strings. According to the [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml): `Prefer ' over "`: "For consistency single-quotes (') are preferred to double-quotes ("). This is helpful when creating strings that include HTML"
 
