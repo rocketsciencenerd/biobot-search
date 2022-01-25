@@ -36,7 +36,8 @@
     "tab:frontend": "ttab -t 'Run Frontend' npm run frontend",
     "tab:backend": "ttab -t 'Run Backend' npm run backend",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "lint": "node_modules/.bin/eslint --ext js src"
   },
   "eslintConfig": {
     "extends": [
