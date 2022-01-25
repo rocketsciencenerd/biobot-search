@@ -69,5 +69,8 @@
 /* Mui Customization */
 .css-16awh2u-MuiAutocomplete-root {
     border-radius: 5px;
+}
+
+.MuiAutocomplete-root.MuiAutocomplete-hasClearIcon.search-box-input.css-1l6di18 {
     flex-grow: 0.95;
 }
