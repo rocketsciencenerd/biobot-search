@@ -1,0 +1,73 @@
+.search-box-and-result {
+    width: 50%;
+    margin: 15px 0;
+    z-index: 2;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.search-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 5px;
+    background: white;
+    height: 50px;
+}
+
+.search-box-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #707070;
+    margin: 4px;
+    z-index: 3;
+    height: 40px;
+    width: 40px;
+}
+
+.search-box-submit-btn:hover {
+    background: #c6c6c6;
+    border-radius: 50%;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+.results-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clear-results-btn {
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Mui Customization */
+.css-16awh2u-MuiAutocomplete-root {
+    border-radius: 5px;
+    flex-grow: 0.95;
+}
