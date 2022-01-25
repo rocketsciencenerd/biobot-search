@@ -20,7 +20,8 @@ export const getShippingInfoByID = async(id) => {
     return data;
   }).catch(() => {
     console.error('Api unavailable, loading from JSON ...');
-    return [shippingData.find(o => o.label_id === id)];
+    const item = shippingData.find(o => o.label_id === id);
+    return (typeof item !== 'undefined') ? [shippingData.find(o => o.label_id === id)] : null;
   });
 }
 
