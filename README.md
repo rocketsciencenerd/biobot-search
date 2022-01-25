@@ -25,7 +25,7 @@ Biobot customers receive a kit with tubes inside of it, which the customer uses 
 ### Linter
 The linter chosen is [eslint](https://eslint.org/) because it came pre-installed with the create-react-app. The create-react-app [docs](https://create-react-app.dev/docs/setting-up-your-editor/) suggested extending the default eslint/prettier config to prevent hard-to-debug errors. See `.eslintrc.json` for an example of setting custom eslint rules. 
 
-The eslint config makes `console.logs` in the code throw a warning, but ignores `console.warn` and `console.error` functions.
+The eslint config in this repo makes `console.logs` in the code throw a warning, but ignores the `console.warn` and `console.error` functions.
 
 ### TypeScript
 [TypeScipt](https://www.typescriptlang.org/) was chosen (while not required since React gives developers a choice to use TS or JS) to encourage maintainability and code consistency. 
@@ -38,11 +38,11 @@ Benefits of TypeScript:
 
 Drawbacks of TypeScript:
 - Takes some time to learn
-- May increases build time since code building needs to go through another layer of compilation
+- May increase build time since code building needs to go through another layer of compilation
 - Can be overly rigid for small projects 
 - Some third party libraries may not have type definitions
 
-Typescript may not be suitable for all new React projects but is worth discussing in a dev team considering the value it adds in the prevention of bugs, improved ability to scale, and concise tracking of props through a React application.
+TypeScript may not be suitable for all new React projects but is worth discussing in a dev team considering the value it adds in the prevention of bugs, improved ability to scale, and concise tracking of props through a React application.
  
 
 ### Material UI
@@ -59,16 +59,16 @@ Animations adapted from [Animate.css](https://animate.style/)
 Opens two terminal tabs, one for `npm run frontend`, one for `npm run backend`. On MacOS, terminal needs accessibility access and will prompt the user to allow the action. Otherwise, to run the app, open two terminals. In one terminal, run `npm run frontend` in another terminal run `npm run backend`.
 
 #### `npm run frontend`
-Runs the app in the development mode at [http://localhost:3000](http://localhost:3000)
+Runs the app in the development mode at [http://localhost:3000](http://localhost:3000).
 
 #### `npm run backend`
-Runs the backend using json-server at [http://localhost:4000](http://localhost:4000). To retrieve shipping data: [http://localhost:4000/shipping_data](http://localhost:4000/shipping_data)
+Runs the backend using json-server at [http://localhost:4000](http://localhost:4000). To retrieve shipping data: [http://localhost:4000/shipping_data](http://localhost:4000/shipping_data).
 
 #### `npm test`
 Launches the test runner in the interactive watch mode. More about [running tests here](https://facebook.github.io/create-react-app/docs/running-tests).
 
 #### `npm run build`
-Builds the app for production to the `build` folder. Bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. [Deployment info here](https://facebook.github.io/create-react-app/docs/deployment)
+Builds the app for production to the `build` folder. Bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. [Deployment info here](https://facebook.github.io/create-react-app/docs/deployment).
 
 #### `npm run lint`
 Runs linter for the application.
