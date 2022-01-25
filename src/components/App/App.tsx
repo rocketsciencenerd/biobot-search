@@ -1,20 +1,26 @@
 import React from 'react';
-import SearchBox from '../SearchBox/SearchBox';
+import {ToastContainer} from 'react-toastify';
+
+import SearchBoxAndResult from '../SearchBoxAndResult/SearchBoxAndResult';
 import logo from '../../assets/logo.svg';
 
 import './app.css';
+import 'react-toastify/dist/ReactToastify.css';
 
-function App() {
+export default function App() {
   return (
     <div className='app'>
+      <ToastContainer/>
       <header className='app-header'>
-        <img src={logo} className='app-logo' alt='logo' />
-        <p> Welcome to the Biobot Test Kit Search App! </p>
+        <img className='app-logo' src={logo} alt='logo'/>
+        <p className='app-header-text'> Welcome to the Biobot Test Kit Search App.</p>
+        <span>
+          Type your Shipping Label Id into the search box below, and click the search icon when done.
+        </span>
+        <span>Or, select your label id from the dropdown.</span>
       </header>
 
-      <SearchBox />
+      <SearchBoxAndResult/>
     </div>
   );
 }
-
-export default App;
