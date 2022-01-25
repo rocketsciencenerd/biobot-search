@@ -32,7 +32,7 @@ const SearchBoxAndResult: FC = () => {
     const id = labelId ? labelId : textInput;
     getShippingInfoByID(id)
       .then((response) => {
-        if (response.length > 0) {
+        if (typeof response !== 'undefined' && response.length > 0) {
           const found = selectedKits.some(el => el.label_id === response[0].label_id);
           if (!found) {
             toast.info('Test Kit Retrieved', {position: toast.POSITION.TOP_RIGHT});
