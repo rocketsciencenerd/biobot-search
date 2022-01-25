@@ -89,7 +89,15 @@ const SearchBoxAndResult: FC = () => {
           }
         />
       </div>
-      
+      {selectedKits.length > 0 ? (
+        <div className='results-container'>
+          <SearchResultsTable searchResults={selectedKits}/>
+          <div className='results-button-container'>
+            <Button className='clear-results-btn' variant='contained' onClick={clearSearchResults}>Clear
+              Results</Button>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
