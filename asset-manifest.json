@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.8fa4abdb.chunk.css",
-    "main.js": "/static/js/main.d9364112.chunk.js",
-    "main.js.map": "/static/js/main.d9364112.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.030dd687.js",
-    "runtime~main.js.map": "/static/js/runtime~main.030dd687.js.map",
-    "static/js/2.ea490775.chunk.js": "/static/js/2.ea490775.chunk.js",
-    "static/js/2.ea490775.chunk.js.map": "/static/js/2.ea490775.chunk.js.map",
-    "static/js/3.4183067e.chunk.js": "/static/js/3.4183067e.chunk.js",
-    "static/js/3.4183067e.chunk.js.map": "/static/js/3.4183067e.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2776276f23afa75cd1eaed4e91afcde5.js": "/precache-manifest.2776276f23afa75cd1eaed4e91afcde5.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.8fa4abdb.chunk.css.map": "/static/css/main.8fa4abdb.chunk.css.map",
-    "static/media/logo.svg": "/static/media/logo.34eda389.svg"
+    "main.css": "/biobot-search/static/css/main.47de604d.chunk.css",
+    "main.js": "/biobot-search/static/js/main.e327c0ca.chunk.js",
+    "main.js.map": "/biobot-search/static/js/main.e327c0ca.chunk.js.map",
+    "runtime~main.js": "/biobot-search/static/js/runtime~main.8e5ccd9d.js",
+    "runtime~main.js.map": "/biobot-search/static/js/runtime~main.8e5ccd9d.js.map",
+    "static/css/2.b8803beb.chunk.css": "/biobot-search/static/css/2.b8803beb.chunk.css",
+    "static/js/2.2bfd242a.chunk.js": "/biobot-search/static/js/2.2bfd242a.chunk.js",
+    "static/js/2.2bfd242a.chunk.js.map": "/biobot-search/static/js/2.2bfd242a.chunk.js.map",
+    "static/js/3.ee2579e7.chunk.js": "/biobot-search/static/js/3.ee2579e7.chunk.js",
+    "static/js/3.ee2579e7.chunk.js.map": "/biobot-search/static/js/3.ee2579e7.chunk.js.map",
+    "index.html": "/biobot-search/index.html",
+    "precache-manifest.9909bd75ba140dde7a4f662790086d95.js": "/biobot-search/precache-manifest.9909bd75ba140dde7a4f662790086d95.js",
+    "service-worker.js": "/biobot-search/service-worker.js",
+    "static/css/2.b8803beb.chunk.css.map": "/biobot-search/static/css/2.b8803beb.chunk.css.map",
+    "static/css/main.47de604d.chunk.css.map": "/biobot-search/static/css/main.47de604d.chunk.css.map",
+    "static/media/logo.svg": "/biobot-search/static/media/logo.34eda389.svg"
   }
 }
