@@ -15,9 +15,8 @@ export default function App() {
         <img className='app-logo' src={logo} alt='logo'/>
         <p className='app-header-text'> Welcome to the Biobot Test Kit Search App.</p>
         <span>
-          Type your Shipping Label Id into the search box below, and click the search icon when done.
+          Type your Shipping Label Id into the search box below, and click the search icon or select your label id from the dropdown.
         </span>
-        <span>Or, select your label id from the dropdown.</span>
       </header>
 
       <SearchBoxAndResult/>

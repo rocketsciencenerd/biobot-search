@@ -1,5 +1,5 @@
 .search-box-and-result {
-    width: 50%;
+    width: 80%;
     margin: 15px 0;
     z-index: 2;
 }
@@ -45,6 +45,10 @@
     animation-duration: 0.5s;
 }
 
+.autocomplete-container {
+    width: 100%;
+}
+
 .results-button-container {
     display: flex;
     justify-content: flex-end;
@@ -71,6 +75,3 @@
     border-radius: 5px;
 }
 
-.MuiAutocomplete-root.MuiAutocomplete-hasClearIcon.search-box-input.css-1l6di18 {
-    flex-grow: 0.95;
-}

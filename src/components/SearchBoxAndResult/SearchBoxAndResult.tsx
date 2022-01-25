@@ -73,21 +73,23 @@ const SearchBoxAndResult: FC = () => {
                 onMouseDown={() => handleSubmit(null)}>
           <SearchIcon/>
         </button>
-        <Autocomplete
-          className='search-box-input'
-          freeSolo
-          onKeyDown={handleKeyDown}
-          onChange={handleAutocompleteChange}
-          options={kitData.map((option) => option.label_id)}
-          renderInput={(params) =>
-            <TextField
-              {...params}
-              label='Label Id'
-              variant='standard'
-              onChange={handleInputChange}
-            />
-          }
-        />
+        <div className='autocomplete-container'>
+          <Autocomplete
+            className='search-box-input'
+            freeSolo
+            onKeyDown={handleKeyDown}
+            onChange={handleAutocompleteChange}
+            options={kitData.map((option) => option.label_id)}
+            renderInput={(params) =>
+              <TextField
+                {...params}
+                label='Label Id'
+                variant='standard'
+                onChange={handleInputChange}
+              />
+            }
+          />
+        </div>
       </div>
       {selectedKits.length > 0 ? (
         <div className='results-container'>
