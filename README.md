@@ -60,7 +60,7 @@ Opens two terminal tabs, one for `npm run frontend`, one for `npm run backend`. 
 Runs the app in the development mode at [http://localhost:3000](http://localhost:3000)
 
 #### `npm run backend`
-Runs the backend using json-server on port 4000.
+Runs the backend using json-server at [http://localhost:4000](http://localhost:4000). To retrieve shipping data: [http://localhost:4000/shipping_data](http://localhost:4000/shipping_data)
 
 #### `npm test`
 Launches the test runner in the interactive watch mode. More about [running tests here](https://facebook.github.io/create-react-app/docs/running-tests).
