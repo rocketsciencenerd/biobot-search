@@ -2,7 +2,7 @@ import React from 'react';
 import {getShippingInfoByID} from '../api/Api';
 
 
-// Example of a unit test, individual function
+// Example of a unit test
 test('gets shipping info from api fallback by id', () => {
 
   const expected = {
