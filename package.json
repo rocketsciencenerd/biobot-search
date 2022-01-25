@@ -28,7 +28,7 @@
   "scripts": {
     "start": "run-s tab:frontend tab:backend",
     "frontend": "react-scripts start",
-    "backend": "npx json-server -p 4000 --watch data/KITS_SHIPPING_DATA.json",
+    "backend": "npx json-server -p 4000 --watch src/data/KITS_SHIPPING_DATA.json --no-cors",
     "tab:frontend": "ttab -t 'Run Frontend' npm run frontend",
     "tab:backend": "ttab -t 'Run Backend' npm run backend",
     "build": "react-scripts build",
