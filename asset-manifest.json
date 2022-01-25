@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/biobot-search/static/css/main.47de604d.chunk.css",
+    "main.css": "/biobot-search/static/css/main.de26cd4f.chunk.css",
     "main.js": "/biobot-search/static/js/main.e327c0ca.chunk.js",
     "main.js.map": "/biobot-search/static/js/main.e327c0ca.chunk.js.map",
     "runtime~main.js": "/biobot-search/static/js/runtime~main.8e5ccd9d.js",
@@ -11,10 +11,10 @@
     "static/js/3.ee2579e7.chunk.js": "/biobot-search/static/js/3.ee2579e7.chunk.js",
     "static/js/3.ee2579e7.chunk.js.map": "/biobot-search/static/js/3.ee2579e7.chunk.js.map",
     "index.html": "/biobot-search/index.html",
-    "precache-manifest.9909bd75ba140dde7a4f662790086d95.js": "/biobot-search/precache-manifest.9909bd75ba140dde7a4f662790086d95.js",
+    "precache-manifest.1dc0e7cab2fb8942d304aa128c3f8447.js": "/biobot-search/precache-manifest.1dc0e7cab2fb8942d304aa128c3f8447.js",
     "service-worker.js": "/biobot-search/service-worker.js",
     "static/css/2.b8803beb.chunk.css.map": "/biobot-search/static/css/2.b8803beb.chunk.css.map",
-    "static/css/main.47de604d.chunk.css.map": "/biobot-search/static/css/main.47de604d.chunk.css.map",
+    "static/css/main.de26cd4f.chunk.css.map": "/biobot-search/static/css/main.de26cd4f.chunk.css.map",
     "static/media/logo.svg": "/biobot-search/static/media/logo.34eda389.svg"
   }
 }

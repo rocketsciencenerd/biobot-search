@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8147cc95181fb7b179da1598f5ebd1a7",
+    "revision": "1eb70d2137f03ccfa40206e74ccf38fe",
     "url": "/biobot-search/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/biobot-search/static/css/2.b8803beb.chunk.css"
   },
   {
-    "revision": "b55f199f3ecd9b1dba58",
-    "url": "/biobot-search/static/css/main.47de604d.chunk.css"
+    "revision": "06eea9f68ffed4a51138",
+    "url": "/biobot-search/static/css/main.de26cd4f.chunk.css"
   },
   {
     "revision": "b6d9c89bdbff556484ca",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/biobot-search/static/js/3.ee2579e7.chunk.js"
   },
   {
-    "revision": "b55f199f3ecd9b1dba58",
+    "revision": "06eea9f68ffed4a51138",
     "url": "/biobot-search/static/js/main.e327c0ca.chunk.js"
   },
   {
