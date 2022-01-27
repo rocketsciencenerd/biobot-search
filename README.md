@@ -71,8 +71,6 @@ const SearchBox: FC = (props) => {
 }
 ```
 
-The one reason to change here would be the text change and it would report the text change back to the parent. 
-
 - Also, for production ready code, I would have added a few more tests for this new proposed component (SearchBox) and for the SearchResultsTable. 
 
 ## Repo Features
