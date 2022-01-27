@@ -17,6 +17,63 @@ Biobot customers receive a kit with tubes inside of it, which the customer uses 
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - All Biobot-specific branded assets were retrieved directly from the [Biobot Analytics](https://biobot.io/) website.
 - Create react app has many vulnerabilities in it's package. Since the create-react-app is not directly deployed to production, rather it generates a build file that is deployed to production, the create-react-app module was moved to devDependencies in the package.json file. Still, `npm audit --production` shows over 103 vulnerabilities (7 high, 1 critical) and whether that was acceptable risk and how to handle mitigation of risk would need to be discussed with the dev team for a production-ready app. 
+- In thinking more about this, I thought of the searchBoxAndResult as one component that could be re-used throughout the app. I could have further broken down searchBoxAndResult into a component containing two componenets (instead of containing the one like it does now). The second component would consist of the search box, search-submit button, and all of the handler functions to go along with the autocomplete component. In other words, move lines 50-65 and 71-93 in the searchBoxAndResult component into it's own component like this, which goes along with SOLID Design Principles:
+
+```
+//@imports here 
+
+// Note: Not typed for typescript but should be
+const props = {handleSubmit, updateTextInput, handleInputChange, kitData};
+
+const SearchBox: FC = (props) => {
+  
+  const handleAutocompleteChange = (event: SyntheticEvent, value: string | null) => {
+    updateTextInput(value);
+    if (value) {
+      handleSubmit(value);
+    }
+  }
+
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    updateTextInput(event.target.value);
+  }
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      handleSubmit(null);
+    }
+  }
+
+ return (
+   <div className='search-box-container'>
+     <button className='search-box-submit-btn' type='button' title='search' aria-label='search' onMouseDown={() => handleSubmit(null)}>
+       <SearchIcon/>
+     </button>
+     <div className='autocomplete-container'>
+       <Autocomplete
+         className='search-box-input'
+         freeSolo
+         onKeyDown={handleKeyDown}
+         onChange={handleAutocompleteChange}
+         options={kitData.map((option) => option.label_id)}
+         renderInput={(params) =>
+           <TextField
+             {...params}
+             label='Label Id'
+             variant='standard'
+             onChange={handleInputChange}
+            />
+          }
+         />
+      </div>
+   </div>
+ )
+}
+```
+
+The one reason to change here would be the text change and it would report the text change back to the parent. 
+
+- Also, for production ready code, I would have added a few more tests for this new proposed component (SearchBox) and for the SearchResultsTable. 
 
 ## Repo Features
 ### CI/CD Workflow
